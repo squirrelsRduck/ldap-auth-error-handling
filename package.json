@@ -1,50 +1,29 @@
-{
-  "name": "passport-ldapauth",
-  "description": "LDAP authentication strategy for Passport",
+
+  "name": "ldapauth-fork",
+  "version": "2.3.3",
+  "main": "./lib/ldapauth.js",
+  "description": "Authenticate against an LDAP server",
   "author": "Vesa Poikajärvi <vesa.poikajarvi@iki.fi>",
-  "contributors": [
-    "Simon Gaeremynck <gaeremyncks@gmail.com>",
-    "Michael Bailly <mbailly@linagora.com>",
-    "Jason Gelinas <jason.gelinas@citi.com>",
-    "arumi <arumi@wge7033.secheron.net>",
-    "Anthony Hernandez <anthony.hernandez@clownphobia.com>"
-  ],
-  "keywords": [
-    "ldap",
-    "passport",
-    "authentication",
-    "ldapauth"
-  ],
-  "version": "0.3.1",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/vesse/passport-ldapauth/raw/master/LICENSE"
+    "url": "https://github.com/vesse/node-ldapauth-fork/raw/master/LICENSE"
   },
-  "main": "./lib/passport-ldapauth",
-  "engines": {
-    "node": ">=0.8.0"
-  },
+  "keywords": [
+    "authenticate",
+    "ldap",
+    "authentication",
+    "auth"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vesse/passport-ldapauth.git"
+    "url": "git://github.com/vesse/node-ldapauth-fork.git"
   },
-  "bugs": {
-    "url": "https://github.com/vesse/passport-ldapauth/issues"
-  },
+  "engines": [
+    "node >=0.8.0"
+  ],
   "dependencies": {
-    "passport-strategy": "1.x.x",
-    "ldapauth-fork": "~2.3.0"
-  },
-  "devDependencies": {
-    "body-parser": "1.14.x",
-    "chai": "3.3.x",
-    "express": "4.9.x",
-    "ldapjs": "0.7.x",
-    "mocha": "2.3.x",
-    "passport": "0.3.x",
-    "supertest": "1.1.x"
-  },
-  "scripts": {
-    "test": "NODE_PATH=lib mocha --reporter spec test/*-test.js"
+    "bcryptjs": "2.1.0",
+    "ldapjs": "1.0.0",
+    "lru-cache": "2.5.0"
   }
-}
+
